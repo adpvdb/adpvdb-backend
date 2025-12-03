@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models iport User
+from .models import User
 
 class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
@@ -12,7 +12,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         user = User.objects.create_user(
                 username=validate_data['username'],
                 email=validated_data['email'],
-                password=validate_data['password']
+                password=validate_data['password'],
                 role='guide'
                )
 

@@ -10,6 +10,8 @@ __pycache__/
 db.sqlite3
 media/
 staticfiles/
+**/migrations/*
+!**/migrations/__init__.py
 
 # Environments
 venv/
