@@ -27,3 +27,4 @@ def protected_view(request):
            )
 
 
+
